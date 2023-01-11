@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+    --font-family-open: 'Open Sans', sans-serif;
+    --font-family-popp: 'Poppins', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    border: none;
+}
+
+* h1,* p{
+    text-align: center;
+    font-family: var(--font-family-open);
+    
+}
+.grid{
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: flex-start;
+    align-content: space-around;
+}
+html{
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+body{
+    background-color: #fff;
+    display: grid;
+    margin: 0;
+    padding: 0px;
+    height: 650vh;
+    align-content: space-between;
+    grid-template: 1% 8% 9% 10% repeat(3,15%) 4% 13%/100%;
+    overflow-x: hidden;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+header div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+header div img{
+    width: 30%;
+}
+header div h1{
+    font-size: 15px;
+    
+}
+
+header .btn-div{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+header .btn-div .btn{
+    color: var(--Light-Pink);
+    background-color: #fff;
+    border: 1px solid var(--Light-Pink);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.build *{
+    width: 70%;
+    text-align: center;
+}
+.build {
+    grid-template: 25% 45% 20%/100%;
+}
+.build h1{
+    font-size: 20px;
+}
+.build p{
+    font-size: 13px;
+}
+ .btn-get{
+    cursor: pointer;
+    background-color: var(--Pink);
+    color: #fff;
+    border-radius: 25px;
+    height: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-get:hover{
+    background-color: var(--Light-Pink);
+}
+img[alt="img"]{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+}
+.communities h1{
+    font-size: 60px;
+    position: relative;
+}
+.communities h1::before{
+    content: "";
+    position: absolute;
+    top: -35%;
+    background: url(./images/icon-communities.svg) no-repeat;
+    width: 100%;
+    height: 50%;
+}
+
+.messages h1{
+    position: relative;
+    font-size: 60px;
+    
+}
+.messages h1::before{
+    content: "";
+    position: absolute;
+    top: -35%;
+    background: url(./images/icon-messages.svg) no-repeat;
+    width: 100%;
+    height: 50%;
+}
+.back1{
+    position: relative;
+    background-color: var(--Very-Pale-Blue);
+}
+.back1::before{
+    content: "";
+    position: absolute;
+    
+    top: -16.5%;
+    background-size: 100% 100%;
+    background: url(./images/bg-section-top-mobile-1.svg) no-repeat;
+    width: 100%;
+    height: 18%;
+}
+.back1::after{
+    content: "";
+    position: absolute;
+    bottom: -18%;
+    background-size: 100% 100%;
+    background: url(./images/bg-section-bottom-mobile-1.svg) no-repeat;
+    width: 100%;
+    height: 18%;
+}
+.back2{
+    position: relative;
+    background-color: var(--Very-Pale-Blue);
+    
+}
+.back2::before{
+    content: "";
+    position: absolute;
+    top: -15.5%;
+    background-size: 100% 100%;
+    background: url(./images/bg-section-top-mobile-2.svg) no-repeat;
+    width: 100%;
+    height: 18%;
+}
+.back2::after{
+    content: "";
+    position: absolute;
+    bottom: -18%;
+    background-size: 100% 100%;
+    background: url(./images/bg-section-bottom-mobile-2.svg) no-repeat;
+    width: 100%;
+    height: 18%;
+}
+.ready{
+    grid-template:  50% 30%/100% !important;
+}
+footer{
+    background: var(--Very-Dark-Cyan);
+    color: #fff;
+    position: relative;
+    grid-template: 45% 50%/80%;
+}
+footer::before{
+    content: "";
+    position: absolute;
+    top: -8.5%;
+    background-size: 100% 100%;
+    background: url(./images/bg-footer-top-mobile.svg) no-repeat;
+    width: 100%;
+    height: 10%;
+}
+footer .newsletter{
+    justify-items: flex-start;
+    align-content: space-between;
+    grid-template: 20% 40% 30%/100%;
+}
+footer .newsletter p{
+    font-size: 14px;
+}
+footer .newsletter form{
+    grid-template: 50% 40%/100%;
+    align-content: space-between;
+    height: 100%;
+    width: 100%;
+
+}
+footer .newsletter form input[type="email"]{
+    height: 100%;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+footer .newsletter form input[type="submit"]{
+    height: 100%;
+    border-radius: 5px;
+    width: 40%;
+    justify-self: flex-end;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--Pink);
+}
+footer .newsletter form input[type="submit"]:hover{
+    background-color: var(--Light-Pink);
+}
+footer .box-Huddle{
+    height: 100%;
+    grid-template: 20% 50% 30% /100%;
+}
+footer .box-Huddle .huddle{
+    grid-template: 100% /20% 80%;
+    width: 80%;
+    height: 100%;
+    justify-self: flex-start;
+    justify-items: flex-start;
+    align-items: center;
+}
+footer .box-Huddle .huddle h1{
+    font-size: 50px;
+}
+footer .phone{
+    justify-items: flex-start;
+    grid-template: 30% 30% 40%/100%;
+    height: 100%;
+}
+footer .phone .icons{
+    height: 100%;
+    align-items: center;
+    width: 50%;
+    grid-template: 100%/30% 30% 30%;
+}
+footer .phone .icons i:hover{
+    transform: scale(3);
+    border-radius: 3px;
+    color: var(--Very-Dark-Cyan);
+    background-color: rgb(43, 168, 226);
+}
+@media (min-width: 376px) and (max-width: 1440px) {
+    * h1{
+        font-size: 30px;
+    }
+    body{
+        
+        grid-template: 2% 8% 15% 6% repeat(3,8%) 5% 9%/100%;
+    }
+    
+    
+    
+    header div h1{
+        font-size: 30px;
+    }
+    
+    
+    header .btn-div .btn{
+        height: 40px;
+        width: 150px;
+        
+    }
+    
+    .build {
+        grid-template: 40% 40% 10%/100%;
+    }
+    .build h1{
+        font-size: 31px;
+    }
+    .build p{
+        font-size: 15px;
+    }
+    .btn-get{
+        width: 36%;
+    }
+    .btn-get:hover{
+        background-color: var(--Light-Pink);
+    }
+    
+    .com{
+        grid-template: 100%/45% 45%;
+    }
+    .communities h1{
+        font-size: 60px;
+        position: relative;
+    }
+    .communities h1::before{
+        content: "";
+        position: absolute;
+        top: -35%;
+        background: url(./images/icon-communities.svg) no-repeat;
+        width: 100%;
+        height: 50%;
+    }
+    
+    .messages h1{
+        position: relative;
+        font-size: 60px;
+        
+    }
+    .messages h1::before{
+        content: "";
+        position: absolute;
+        top: -35%;
+        background: url(./images/icon-messages.svg) no-repeat;
+        width: 100%;
+        height: 50%;
+    }
+    .back1{
+        position: relative;
+        grid-template: 95%/30% 60%;
+        background-color: var(--Very-Pale-Blue);
+    }
+    .back1::before{
+        content: "";
+        position: absolute;
+        
+        top: -47.5%;
+        background-size: 100% 100%;
+        background: url(./images/bg-section-top-desktop-1.svg) no-repeat;
+        width: 100%;
+        height: 48%;
+    }
+    .back1::after{
+        content: "";
+        position: absolute;
+        bottom: -43%;
+        background-size: 100% 100%;
+        background: url(./images/bg-section-bottom-desktop-1.svg) no-repeat;
+        width: 100%;
+        height: 43%;
+    }
+    .back1 img{
+        grid-area: 1/2/2/3;
+    }
+    .back3{
+
+        grid-template: 95%/30% 60%;
+    }
+    .back2{
+        
+        grid-template: 95%/30% 60%;
+        position: relative;
+        background-color: var(--Very-Pale-Blue);
+        
+    }
+    .back2::before{
+        content: "";
+        position: absolute;
+        top: -44.5%;
+        background-size: 100% 100%;
+        background: url(./images/bg-section-top-desktop-2.svg) no-repeat;
+        width: 100%;
+        height: 46%;
+    }
+    .back2::after{
+        content: "";
+        position: absolute;
+        bottom: -42%;
+        background-size: 100% 100%;
+        background: url(./images/bg-section-bottom-desktop-2.svg) no-repeat;
+        
+        width: 100%;
+        height: 42%;
+    }
+    .back2 img{
+        grid-area: 1/2/2/3;
+    }
+    .ready{
+        grid-template:  50% 30%/100% !important;
+    }
+    footer{
+        background: var(--Very-Dark-Cyan);
+        color: #fff;
+        position: relative;
+        grid-template: 80%/50% 45%;
+        justify-content: space-evenly;
+    }
+    footer::before{
+        content: "";
+        position: absolute;
+        top: -40.5%;
+        background-size: 100% 100%;
+        background: url(./images/bg-footer-top-desktop.svg) no-repeat;
+        width: 100%;
+        height: 41%;
+    }
+    footer .newsletter{
+        justify-items: flex-start;
+        align-content: space-between;
+        grid-area: 1/2/2/3;
+        grid-template: 20% 40% 30%/100%;
+    }
+    footer .newsletter p{
+        font-size: 12px;
+    }
+    footer .newsletter form{
+        grid-template: 70%/55% 40%;
+        align-content: space-between;
+        height: 100%;
+        width: 100%;
+    
+    }
+    footer .newsletter form input[type="email"]{
+        height: 100%;
+        border-radius: 5px;
+        width: 100%;
+        cursor: pointer;
+    }
+    
+    
+    footer .newsletter form input[type="submit"]{
+        height: 100%;
+        border-radius: 5px;
+        width: 50%;
+        justify-self: flex-start;
+        color: #fff;
+        cursor: pointer;
+        background-color: var(--Pink);
+    }
+    footer .newsletter form input[type="submit"]:hover{
+        background-color: var(--Light-Pink);
+    }
+    footer .box-Huddle{
+        height: 100%;
+        grid-template: 20% 50% 30% /100%;
+    }
+    footer .box-Huddle .huddle{
+        grid-template: 100% /30% 60%;
+        width: 80%;
+        height: 100%;
+        justify-self: flex-start;
+        justify-items: flex-start;
+        align-items: center;
+    }
+    footer .box-Huddle .huddle h1{
+        font-size: 30px;
+    }
+    footer .box-Huddle{
+        font-size: 12px;
+    }
+    footer .phone{
+        justify-self: flex-start;
+        justify-items: flex-start;
+        grid-template: 30% 30% 40%/100%;
+        height: 100%;
+    }
+    footer .phone .icons{
+        height: 100%;
+        align-items: center;
+        width: 50%;
+        grid-template: 100%/30% 30% 30%;
+    }
+    footer .phone .icons i{
+        transform: scale(2);
+    }
+}
+
+
+
+
+
