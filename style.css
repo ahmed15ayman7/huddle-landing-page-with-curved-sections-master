@@ -404,7 +404,7 @@ footer .phone .icons i:hover{
     footer::before{
         content: "";
         position: absolute;
-        top: -40.5%;
+        top: -39.5%;
         background-size: 100% 100%;
         background: url(./images/bg-footer-top-desktop.svg) no-repeat;
         width: 100%;
